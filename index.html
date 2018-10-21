@@ -1,0 +1,92 @@
+
+<!doctype html>
+
+<html>
+<head></head>
+
+<title></title>
+<style type="text/css">
+
+	#flower {width:500px; height: 317px; position: absolute; top: 20%; left: 30%;
+		background: url('change1.png'); background-size: cover;}
+
+	#next {width: 45px; height: 61px; position: absolute; top: 38%; left: 53%;
+		background: url('but.jpg'); background-size: cover;}
+
+	#yes {width: 86px; height: 51px; position: absolute; top: 50%; left: 53%;
+		background: url('yes.jpg'); background-size: cover;}
+	#back {width: 1200px; height: 675px; position: absolute; background: url('back1.jpg'); background-size: cover; }
+
+	
+
+</style>
+<body>
+	<div id="back"></div>
+	<div id="flower"></div>
+
+
+	<button id="next" ></button>
+	<button id="yes" ></button>
+
+
+
+
+
+	<script type="text/javascript">
+
+		var currentFlower = 1;
+
+
+
+		next.onclick = function(){
+			
+			if(currentFlower == 1){
+				flower.style.background = "url('change222.png')";
+				currentFlower = 2;
+
+			}else if( currentFlower == 2){
+				flower.style.background = "url('change33.png')";
+				currentFlower = 3; 
+			}else if( currentFlower == 3){
+				flower.style.background = "url('change4.png')";
+				currentFlower = 4; 
+
+			}else if( currentFlower == 4){
+				flower.style.background = "url('change5.png')";
+				currentFlower = 5; 
+
+			}else if( currentFlower == 5){
+				flower.style.background = "url('change1.png')";
+				currentFlower = 1; 
+
+			}
+			flower.style.backgroundSize = "cover";
+		}
+
+		var currentBack = 1;
+
+		yes.onclick = function(){
+			if(currentBack == 1){
+				back.style.background = "url('back2.jpg')";
+				currentBack = 2;
+
+			}else if( currentBack == 2){
+				back.style.background = "url('back3.jpg')";
+				currentBack = 3; 
+			}else if( currentBack == 3){
+				back.style.background = "url('back4.jpg')";
+				currentBack = 4; 
+			}else if( currentBack == 4){
+				back.style.background = "url('back5.jpg')";
+				currentBack = 5; 
+			}else if( currentBack == 5){
+				back.style.background = "url('back1.jpg')";
+				currentBack = 1; 
+			}
+			back.style.backgroundSize = "cover";
+		}
+
+		
+    </script>
+ </body>
+</html>
